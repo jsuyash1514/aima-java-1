@@ -1,4 +1,4 @@
-# ![](https://github.com/aimacode/aima-java/blob/gh-pages/aima3e/images/aima3e.jpg)AIMA3e-Java (JDK 8+) [![Build Status](https://travis-ci.org/aimacode/aima-java.svg?branch=AIMA3e)](https://travis-ci.org/aimacode/aima-java)
+# ![](https://github.com/aimacode/aima-java/blob/gh-pages/aima3e/images/aima3e.jpg)AIMA3e-Java (JDK 8+) [![Build Status](https://travis-ci.org/aimacode/aima-java.svg?branch=AIMA3e)](https://travis-ci.org/aimacode/aima-java) [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/aimacode/aima-java/AIMA3e)
 Java implementation of algorithms from [Russell](http://www.cs.berkeley.edu/~russell/) and [Norvig's](http://www.norvig.com/) [Artificial Intelligence - A Modern Approach 3rd Edition](http://aima.cs.berkeley.edu/). You can use this in conjunction with a course on AI, or for study on your own. We're looking for [solid contributors](https://github.com/aimacode/aima-java/wiki/AIMAJava-Contributing) to help.
 
 ### Getting Started Links 
@@ -8,7 +8,7 @@ Java implementation of algorithms from [Russell](http://www.cs.berkeley.edu/~rus
   * [Demo Applications that can be run from your browser](http://aimacode.github.io/aima-java/aima3e/aima3ejavademos.html).
   * [Comments on architecture and design](https://github.com/aimacode/aima-java/wiki/AIMA3e-Architecture-and-Design).
   * [Javadoc for the aima-core project](http://aimacode.github.io/aima-java/aima3e/javadoc/aima-core/index.html).
-  * [Download the latest official version  = 1.9.1 (Dec 18 2016)](https://github.com/aimacode/aima-java/releases/tag/aima3e-v1.9.1).
+  * [Download the latest official (but outdated) version  = 1.9.1 (Dec 18 2016)](https://github.com/aimacode/aima-java/releases/tag/aima3e-v1.9.1).
   * Latest Maven Information (for integration as a third party library)<br>
   
       ```
@@ -21,8 +21,8 @@ Java implementation of algorithms from [Russell](http://www.cs.berkeley.edu/~rus
 
 ### Index of Implemented Algorithms
 
-|Fig|Page|Name (in book)|Code|
-| -------- |:--------:| :-----| :----- |
+|Figure|Page|Name (in 3<sup>rd</sup> edition)|Code|Test|Notebook
+| -------- |:--------:| :-----| :----- |:----- |:----- |
 |2|34|Environment|[Environment](/aima-core/src/main/java/aima/core/agent/Environment.java)|
 |2.1|35|Agent|[Agent](/aima-core/src/main/java/aima/core/agent/Agent.java)|
 |2.3|36|Table-Driven-Vacuum-Agent|[TableDrivenVacuumAgent](/aima-core/src/main/java/aima/core/environment/vacuum/TableDrivenVacuumAgent.java)|
@@ -84,7 +84,7 @@ Java implementation of algorithms from [Russell](http://www.cs.berkeley.edu/~rus
 |10.9|383|Graphplan|[GraphPlan](/aima-core/src/main/java/aima/core/logic/planning/GraphPlanAlgorithm.java)|
 |11.5|409|Hierarchical-Search|[HierarchicalSearchAlgorithm](/aima-core/src/main/java/aima/core/logic/planning/hierarchicalsearch/HierarchicalSearchAlgorithm.java)|
 |11.8|414|Angelic-Search|---|
-|13.1|484|DT-Agent|---|
+|13.1|484|DT-Agent|[DT-Agent](/aima-core/src/main/java/aima/core/agent/DTAgent.java)|
 |13|484|Probability-Model|[ProbabilityModel](/aima-core/src/main/java/aima/core/probability/ProbabilityModel.java)|
 |13|487|Probability-Distribution|[ProbabilityDistribution](/aima-core/src/main/java/aima/core/probability/ProbabilityDistribution.java)|
 |13|490|Full-Joint-Distribution|[FullJointDistributionModel](/aima-core/src/main/java/aima/core/probability/full/FullJointDistributionModel.java)|
@@ -100,11 +100,11 @@ Java implementation of algorithms from [Russell](http://www.cs.berkeley.edu/~rus
 |15.6|580|Fixed-Lag-Smoothing|[FixedLagSmoothing](/aima-core/src/main/java/aima/core/probability/hmm/exact/FixedLagSmoothing.java)|
 |15|590|Dynamic Bayesian Network|[DynamicBayesianNetwork](/aima-core/src/main/java/aima/core/probability/bayes/DynamicBayesianNetwork.java)|
 |15.17|598|Particle-Filtering|[ParticleFiltering](/aima-core/src/main/java/aima/core/probability/bayes/approx/ParticleFiltering.java)|
-|16.9|632|Information-Gathering-Agent|---|
+|16.9|632|Information-Gathering-Agent|[InformationGatheringAgent](/aima-core/src/main/java/aima/core/probability/InformationGatheringAgent.java)|
 |17|647|Markov Decision Process|[MarkovDecisionProcess](/aima-core/src/main/java/aima/core/probability/mdp/MarkovDecisionProcess.java)|
 |17.4|653|Value-Iteration|[ValueIteration](/aima-core/src/main/java/aima/core/probability/mdp/search/ValueIteration.java)|
 |17.7|657|Policy-Iteration|[PolicyIteration](/aima-core/src/main/java/aima/core/probability/mdp/search/PolicyIteration.java)|
-|17.9|663|POMDP-Value-Iteration|---|
+|17.9|663|POMDP-Value-Iteration|[POMDPValueIteration](/aima-core/src/main/java/aima/core/probability/mdp/search/POMDPValueIteration.java)|
 |18.5|702|Decision-Tree-Learning|[DecisionTreeLearner](/aima-core/src/main/java/aima/core/learning/learners/DecisionTreeLearner.java)|
 |18.8|710|Cross-Validation-Wrapper|[CrossValidation](/aima-core/src/main/java/aima/core/learning/inductive/CrossValidation.java)|
 |18.11|717|Decision-List-Learning|[DecisionListLearner](/aima-core/src/main/java/aima/core/learning/learners/DecisionListLearner.java)|
